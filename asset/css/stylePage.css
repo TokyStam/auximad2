@@ -1,0 +1,25 @@
+body{
+   /*background-image: url("../img/bg.png");*/
+    padding: 10px;
+    background-attachment: fixed;
+}
+@media (min-width: 992px){
+    body{
+        background-image: url("../img/bg-gris.jpg");
+    }
+}
+
+footer{
+    margin-top: 10px;}
+
+@media (max-width: 991px){
+    body{
+        padding: 0px 10px 10px 10px;
+    }
+}
+.section1{
+    font-size: 0.9em;
+}
+.section1 h5{
+    color: dodgerblue;
+}

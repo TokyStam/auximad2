@@ -1,0 +1,10 @@
+#form_add{
+    box-shadow: 2px 2px 10px black;
+}
+#formTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #fff8c9;
+    text-shadow: 0px 0px 4px #fff;
+}

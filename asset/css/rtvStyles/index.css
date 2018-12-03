@@ -1,0 +1,105 @@
+header{
+    margin-bottom: 20px;
+    margin-top: 55px;
+}
+#radio_tvheader {
+    padding: 5px;
+    cursor: move;
+    z-index: 10;
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+}
+#pied-page{
+    margin-top: 40px;
+    position: absolute;
+    background: rgb(30,30,30);
+    
+    padding-top: 30px;
+    color: #cccccc;
+    border-top: 5px solid #ff9900;
+}
+#mybody{
+    background-attachment: fixed;
+    background: url('http://localhost/test/asset/img/bg-body.jpg');
+}
+#radio, #tele{
+    padding: 15px;
+    background-color:  white;
+    
+}
+#radio{
+    height: auto;
+}
+#radio_tv{
+    -moz-box-shadow:     0 0 10px rgba(5, 5, 5, 0.400);
+    -webkit-box-shadow:  0 0 10px rgba(5, 5, 5, 0.400);
+    box-shadow:          0 0 10px rgba(5, 5, 5, 0.400);
+    background-color: #ffed41;
+}
+
+#pubEmission{
+    margin-top: 30px;
+    background-color: #009f50;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+#titleMedia{
+    color:black;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.664);
+}
+#liste a{
+    color: white;
+}
+#liste a:hover{
+    color: orange;
+}
+#logo{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+#jumbontron{
+    margin-top: 55px;
+    background-image: url("http://localhost/test/asset/img/back.JPG");
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -moz-box-shadow:    inset 0 0 15px rgba(5, 5, 5, 0.835);
+    -webkit-box-shadow: inset 0 0 15px rgba(5, 5, 5, 0.835);
+    box-shadow:         inset 0 0 15px rgba(5, 5, 5, 0.835);
+}
+
+#varPage{
+    background-color: #ffed41;
+    padding: 10px;
+
+    -moz-box-shadow:     0 0 10px rgba(5, 5, 5, 0.400);
+    -webkit-box-shadow:  0 0 10px rgba(5, 5, 5, 0.400);
+    box-shadow:          0 0 10px rgba(5, 5, 5, 0.400);
+
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*mise en forme image slide*/
+.display-4{
+    color: #ffa003;
+    text-shadow: 0 0 2px #000;
+}
+.lead{
+    text-shadow: 0 0 1px #000;
+}
