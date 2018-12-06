@@ -86,7 +86,7 @@
 
                                     if(!empty($services[$i]->DETAILCATEGORIESERVICE)){ ?>
 
-                                        <a class="dropdown-item" href="<?php echo site_url('accueil/Service/categorie_services/').$detailleCategories.'/'.$services[$i]->IDCATEGORIESERVICE;?>">
+                                        <a class="dropdown-item" href="<?php echo site_url('accueil/ModelService/categorie_services/').$detailleCategories.'/'.$services[$i]->IDCATEGORIESERVICE;?>">
                                             <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                     <?php echo strtolower($detailleCategories);?></font></font>
                                         </a>

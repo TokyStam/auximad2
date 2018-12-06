@@ -1,0 +1,7 @@
+.w3-sidenav .w3-padding{
+    color: #1d2124;
+}
+
+.modal-body .form-group [type=file]{
+    border: none;
+}

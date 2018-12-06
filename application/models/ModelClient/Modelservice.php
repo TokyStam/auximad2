@@ -9,7 +9,7 @@
 class Modelservice extends CI_Model
 {
     protected $tableCateg = 'CATEGORIESERVICE';
-    protected $tableService = 'SERVICE';
+    protected $tableService = 'ModelService';
 
     public  function toRequest($req){
         $query =$this->db->query($req);
@@ -24,7 +24,7 @@ class Modelservice extends CI_Model
     }
 
     public function toGetCategorieService(){
-        $requette = "SELECT IDCATEGORIESERVICE,TITRECATEGORIESERVICE, DETAILCATEGORIESERVICE FROM  CATEGORIESERVICE ;";
+        $requette = "SELECT * FROM  CATEGORIESERVICE ;";
         return $this->toRequest($requette);
     }
 
@@ -46,4 +46,5 @@ class Modelservice extends CI_Model
 			FROM  SERVICE JOIN CATEGORIESERVICE ON CATEGORIESERVICE.IDCATEGORIESERVICE = SERVICE.IDCATEGORIESERVICE WHERE TITRECATEGORIESERVICE= '$categorieService';";
         return $this->toRequest($requette);
     }
+
 }
