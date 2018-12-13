@@ -31,6 +31,15 @@ class Modelservice extends CI_Model
     public function toGetDetailCategorieService($idCategorieService){
         $requette = "SELECT * FROM  CATEGORIESERVICE WHERE IDCATEGORIESERVICE = $idCategorieService;";
         return $this->toRequest($requette);
+
+    }
+    public function getByCategorieId($idCategorieService)
+    {
+        $this->db->from($this->tableCateg);
+        $this->db->where('IDCATEGORIESERVICE',$idCategorieService);
+        $query = $this->db->get();
+
+        return $query->row();
     }
 
     public function toGetDetailService($idService){

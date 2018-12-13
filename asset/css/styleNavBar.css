@@ -215,8 +215,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: red;
 }
-
+.carousel-item  h2{
+    color: white;
+    text-shadow: 0 0 1px black;
+}
 
 /*jumbotron*/
 .jumbotron  img{

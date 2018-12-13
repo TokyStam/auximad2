@@ -8,6 +8,7 @@
 <!-- End page content -->
 </div>
 
+
 <script>
     // Get the Sidenav
     var mySidenav = document.getElementById("mySidenav");
@@ -32,8 +33,9 @@
         overlayBg.style.display = "none";
     }
 </script>
+<script src="<?php echo base_url('asset/js/adminJs.js')?>"></script>
+<script src="<?php echo base_url('asset/jquery/jquery-3.1.1.min.js')?>"></script>
+<script src="<?php echo base_url('asset/datatables/js/jquery.dataTables.min.js')?>"></script>
+<script src="<?php echo base_url('asset/datatables/js/dataTables.bootstrap.js')?>"></script>
 
 </body>
-
-<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_analytics&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jan 2017 15:49:28 GMT -->
-</html>

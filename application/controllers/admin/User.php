@@ -130,8 +130,8 @@ class User extends CI_Controller {
 				$_SESSION['is_admin']     = (bool)$user->is_admin;
 				
 				// user login ok
-				
-				$this->load->view('admin/index', $data);
+
+                redirect( 'admin/CService');
 			
 				
 			} else {
@@ -162,16 +162,18 @@ class User extends CI_Controller {
 		$data = new stdClass();
 		
 		if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-			
+			$typeUser = $_SESSION['is_admin'];
 			// remove session datas
 			foreach ($_SESSION as $key => $value) {
 				unset($_SESSION[$key]);
 			}
-			
 			// user logout ok
-			
-			$this->load->view('admin/user/logout/logout_success', $data);
-		
+            if($typeUser){
+                $this->load->view('admin/user/login/login', $data);
+            }else{
+                $this->load->view('accueil/index', $data);
+            }
+
 			
 		} else {
 			

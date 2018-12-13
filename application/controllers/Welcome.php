@@ -7,6 +7,7 @@ class Welcome extends CI_Controller {
         $this->load->helper('assets_helper');
         $this->load->model('ModelClient/Modelapropos', 'Modelapropos');
         $this->load->model('ModelClient/Modelservice', 'Modelservice');
+        $this->load->model('ModelAdmin/ModelPhotoSlide');
     }
 
 	public function index()
@@ -20,6 +21,7 @@ class Welcome extends CI_Controller {
             'apropos' => $apropos,
             'services' => $services,
         );
+        $data['photosslide'] = $this->ModelPhotoSlide->toGetPhotoSlide();
 		$this->load->view('accueil/index', $data);
 	}
 }

@@ -6,19 +6,22 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('<?php echo img_url("slide1.jpg"); ?>')">
-            </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image:  url('<?php echo img_url("slide2.JPG"); ?>')">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image:  url('<?php echo img_url("slide3.jpg"); ?>')">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
+
+            <?php $i=0;
+            foreach($photosslide as $photo)
+                    { if($i == 0) {?>
+                        <!-- pour le premier slide active -->
+                        <div class="carousel-item active" style="background-image: url('<?php echo img_url($photo->PHOTOSSLIDE. '.jpg') ?>')">
+                        <?php } else {?>
+                            <!-- pour les deux dernieres slide non active -->
+                            <div class="carousel-item" style="background-image:  url('<?php echo img_url($photo->PHOTOSSLIDE. '.jpg') ?>')">
+                        <?php }?>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="font-weight-bold"> <?php echo $photo->TITREPHOTOSSLIDE;?></h2>
+                            </div>
+                        </div>
+            <?php  $i ++;}?>
+
 
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

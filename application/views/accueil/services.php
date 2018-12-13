@@ -6,7 +6,7 @@
                     <!--navigation-->
                     <?php $urlRetourAccueilFr=site_url("Welcome");?>
                     <a style="margin-left: 20px;" class="navigation" href="<?php echo $urlRetourAccueilFr ?>" > Accueil ></a>
-                    <a  class="navigation" style="text-decoration: none" href="<?php echo site_url('accueil/service/expedition_agent') ?>"> Nos services	</a>
+                    <a  class="navigation" style="text-decoration: none" href="#"> Nos services	</a>
                     <!--navigation-->
                     <hr width="100%">
 

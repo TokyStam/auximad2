@@ -1,4 +1,4 @@
-<script type="text/javascript" src="<?php echo  base_url().'/assets/tiny_mce/tiny_mce.js' ?>"></script>
+<script type="text/javascript" src="<?php echo  base_url().'/asset/tiny_mce/tiny_mce.js' ?>"></script>
 
 <script type="text/javascript">
     tinyMCE.init({

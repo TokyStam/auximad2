@@ -25,6 +25,6 @@ if ( ! function_exists('video_url')){
 if ( ! function_exists('img'))
 {
     function img($nom, $alt = ''){
-        return '<img src="' . img_url($nom) . '" alt="' . $alt . '" />';
+        return '<img src="' . img_url($nom) . '" alt="' . $alt . '" width="50" height="50" />';
     }
 }

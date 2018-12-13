@@ -1,0 +1,12 @@
+.w3-sidenav {
+    background-color: #1d2124;
+    color: #d3d9df;
+}
+
+.w3-sidenav .w3-padding{
+    color: #d3d9df;
+}
+
+.w3-sidenav .w3-padding:hover{
+    color: black;
+}

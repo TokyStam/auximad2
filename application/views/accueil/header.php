@@ -56,6 +56,7 @@
                             <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A propos</font></font></a>
                             <div class="dropdown-menu"aria-labelledby="dropdown07">
                                 <?php for($i=0;$i< count($apropos);$i++){
+
                                     $titreCategorieApropos = $apropos[$i]->TITRECATEGORIEAPROPOS;
                                     $ancien = array("-",  "'", "é", "à", "è", "À", "É", "È");
                                     $new = array("", "", "e", "a", "e", "a", "e", "e");
@@ -65,7 +66,7 @@
                                     $titreCategorieApropos=strtolower($titreCategorieApropos); //minus
                                     if(!empty($apropos[$i]->DETAILCATEGORIEAPROPOS)){?>
 
-                                        <a class="dropdown-item" href="<?php echo site_url('accueil/Apropos/categorieApropos/').$titreCategorieApropos.'/'.$apropos[$i]->IDCATEGORIEAPROPOS;?>">
+                                        <a class="dropdown-item" href="<?php echo site_url('accueil/CApropos/categorieApropos/').$titreCategorieApropos.'/'.$apropos[$i]->IDCATEGORIEAPROPOS;?>">
                                             <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                     <?php echo strtolower($titreCategorieApropos);?></font></font>
                                         </a>
@@ -86,7 +87,7 @@
 
                                     if(!empty($services[$i]->DETAILCATEGORIESERVICE)){ ?>
 
-                                        <a class="dropdown-item" href="<?php echo site_url('accueil/ModelService/categorie_services/').$detailleCategories.'/'.$services[$i]->IDCATEGORIESERVICE;?>">
+                                        <a class="dropdown-item" href="<?php echo site_url('accueil/CService/categorie_services/').$detailleCategories.'/'.$services[$i]->IDCATEGORIESERVICE;?>">
                                             <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                     <?php echo strtolower($detailleCategories);?></font></font>
                                         </a>

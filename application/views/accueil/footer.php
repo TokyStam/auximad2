@@ -22,7 +22,7 @@
                     <p><i class="fas fa-map-marker-alt"></i> Via Rossini 10, 10136 Turin Italy18 Rue J.J.Rabearivelo Antsahavola 101 - Antananarivo - MADAGASCA</p>
                     <p><i class="fas fa-phone"></i> Phone: +261 20 225 02 </p>
                     <p><i class="fas fa-envelope"></i> Email: <a href="mailto:auximad@auximad.mg">auximad@auximad.mg</a></p>
-                    <p><i class="fab fa-fax"></i> Fax: +261 20 22 310 98 - BP: 108</p>
+                    <p><i class="fa fa-fax"></i> Fax: +261 20 22 310 98 - BP: 108</p>
                 </div>
                 <div class="col-md-5 col-lg-4 footer-social wow fadeInUp">
                     <h3>Follow us</h3>
